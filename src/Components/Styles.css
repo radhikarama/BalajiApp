@@ -1,0 +1,300 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* ABOUT */
+.about,.contact{
+  top: 50%;
+  left: 50%;
+}
+
+.about p{
+text-align:justify;
+color: lightcoral;
+font-size: 18px;
+}
+/* END ABOUT */
+
+/* Header */
+.foodicon{
+position: absolute;
+top: 40%;
+left: 43%;
+}
+.resicon{
+  font-size: 6rem;
+ color: crimson;
+}
+.search{
+  position: absolute;
+    top: 34%;
+    left: 35%;
+    
+}
+.name{
+  text-shadow: 3px 3px chartreuse;
+  color:crimson ;
+}
+/*END  Header */
+
+.header img,.cartheader img{
+ height: 600px;
+}
+
+/* HeaderButtons */
+.carticon{
+  font-size: 30px;
+color: rgb(13, 206, 42);
+cursor: pointer;
+}
+.carticon:hover {
+  color: coral;
+}
+.cartlength{
+  position: absolute;
+   left: 73%;
+    top: 7%;
+    color: green;
+     font-size: 25px;
+}
+
+.fbars{
+  display: none ;
+}
+.formSelect {
+  width: 25%;
+}
+.dropdown select {
+   border: inherit !important;
+  color: blue;
+  font-size: 1.5rem;
+  /* background-color: transparent !important;  */
+}
+.dropdown Button{
+  margin: 3px;
+  border: inherit !important;
+  color: blue;
+  font-size: 25px;
+ background-color: transparent !important;
+}
+ .dropdown Button:hover {
+ color: red;
+ border:2px solid seagreen ;
+  background-color: greenyellow;
+}
+.dropdown {
+  position: absolute;
+  top: -480px;
+  left:25%;
+  width: 55%;
+  height: 50px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* End HeaderButtons */
+
+/* CartItems  */
+.cartProducts {
+  width: 70%;
+  height: 58vh;
+  overflow-y: scroll;
+}
+.orders {
+  width: 30%;
+  height: 45vh;
+  overflow-y: scroll;
+  margin: auto;
+  background-color: gold;
+}
+.basket {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  background-color: antiquewhite;
+  width: 70%;
+  margin: auto;
+  height: 60vh;
+  padding: 10px;
+  margin-top: 20px;
+}
+.redirect {
+  text-decoration: inherit !important;
+  float: right;
+}
+.cartitemimage {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+.cartProducts Col {
+  max-width: 3px;
+}
+/* End CartItems  */
+
+/* SingleItem */
+span{
+ position: absolute;
+ top: 3%;
+ border-radius: 50%;
+ padding-left:5px;
+ padding-right: 5px;
+ padding-bottom: 2px;
+ font-size: 25px;
+ text-align: center;
+ color: gray;
+ left:1%;
+ background-color: white;
+}
+span:hover{
+ color: goldenrod;
+}
+.price{
+ position: absolute;
+ left: 69.5%;
+ top: 5%;
+ color: wheat;
+ width: 90px;
+ padding: 4px;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+ background-color: rgb(9, 169, 20);
+}
+.products {
+  width: 60%;
+}
+.modelbtn{
+  position: absolute;
+  top: 25%;
+  border: inherit !important;
+opacity: 0.9;
+  left: 26%;
+}
+/* End SingleItem */
+
+/* Home */
+.productContainer{
+ margin-top: 20px;
+ display: grid;
+   justify-items: center;
+   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+ height: 86vh;
+  overflow-y: scroll;
+}
+/* END Home */
+
+
+
+
+@media screen and (max-width:1200px) {
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+     .dropdown {
+       /* top: -580px;
+       height: 60px; */
+  width: 70%;
+  left: 10%;
+     }
+    .cartitemimage {
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+    }
+    .cartProducts Col {
+      max-width: 2px;
+    }
+        .cartProducts {
+          width: 65%;
+        }
+            .search {
+              top: 40%;
+              left: 15%;
+            }
+                        .foodicon {
+                          top: 50%;
+                          left: 33%;
+                        }
+        .orders {
+          width: 35%;
+        }
+                 /* .fbars {
+                   display: none;
+                 } */
+}
+@media screen and (max-width:900px) {
+  /* HeaderButtons */
+  .dropdown{
+top: -580px;
+height: 60px;
+left: 30%;
+  }
+.headerbtns {
+  display: none !important;
+}
+     .search {
+       top: 98%;
+       /* left: 15%; */
+     }
+             .fbars {
+               cursor: pointer;
+               display: flex;
+             }
+      
+             .toggle {
+               display: flex;
+               justify-content: space-around;
+             }
+ /* End HeaderButtons */
+
+  /* HEADER */
+     .foodicon {
+       top: 3%;
+       left: 2%;
+     }
+     .resicon{
+       font-size: 40px;
+     }
+     .name{
+       font-size: 30px;
+     }
+            /*END  HEADER */
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+     
+  .header {
+    width: 1000px;
+  }
+  .cartitemimage {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .cartProducts Col{
+    max-width: 2px;
+  }
+  .basket{
+    display: flex;
+    /* grid-template-columns: auto; */
+    height: 56vh;
+    width: 100%;
+  }
+    .cartProducts {
+      width: 65%;
+      height: 56vh;
+      overflow-y: scroll;
+    }
+    .orders {
+      height: 56vh;
+      width: 35%;
+overflow-y: scroll;
+    }
+}
