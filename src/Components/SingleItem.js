@@ -82,7 +82,7 @@ const SingleItem = ({ product }) => {
               {
                 viewProduct.some((view) => view.id === product.id) ? (
 
-                  <Button className='bg-success'
+                  <Button className='bg-danger'
                     onClick={() => dispatch({
                       type: "REMOVE_VIEWITEM",
                       payload: product.id
