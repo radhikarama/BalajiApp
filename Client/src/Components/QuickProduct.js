@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Modal, Button, Card } from 'react-bootstrap'
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Food_items } from './Context/Context'
 import HeaderButtons from './HeaderButtons'
@@ -11,7 +11,7 @@ const QuickProduct = () => {
   <>
 
    <div className='cartheader'>
-    <img src='https://www.swagruhafoods.net/assets/images/new.jpg' className='d-block w-100 ' />
+    <img src='https://www.swagruhafoods.net/assets/images/new.jpg' className='d-block w-100 ' alt='image' />
    </div>
    <div>
     <HeaderButtons />

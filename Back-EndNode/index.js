@@ -11,13 +11,16 @@ const app = express();
 app.use(bodyparser.json());
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(Client + "/public")))
+const PORT = process.env.PORT || global.config.PORT;
+if (process.env.NODE_ENV === 'production') {
+ app.use(express.static('Client/build'))
+}
 const objCollection = {
  app: app
 }
 new Controller(objCollection);
-
+//process.env.PORT ||
 const server = require('http').createServer(app)
-server.listen(process.env.PORT || global.config.PORT, () => {
+server.listen(PORT, () => {
  console.log(`listing to the port ${global.config.PORT}`)
 })
