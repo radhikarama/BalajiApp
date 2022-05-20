@@ -17,6 +17,6 @@ const objCollection = {
 new Controller(objCollection);
 
 const server = require('http').createServer(app)
-server.listen(global.config.PORT, () => {
+server.listen(process.env.port || global.config.PORT, () => {
  console.log(`listing to the port ${global.config.PORT}`)
 })
