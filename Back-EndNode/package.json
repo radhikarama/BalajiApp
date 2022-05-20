@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engine":{
+    "node":"16.13.0",
+     "npm":"1.0.0"
+  },
   "scripts": {
     "start": "nodemon index.js",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
