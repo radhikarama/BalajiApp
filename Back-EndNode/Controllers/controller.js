@@ -22,7 +22,7 @@ function controller(objCollection) {
   }
  })
  //get data
- app.post('/' + 'gettingItemsdata', async (req, res) => {
+ app.get('/' + 'gettingItemsdata', async (req, res) => {
   let [err, result] = await services.getData(req.body);
   if (!err) {
    res.json({
