@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React rest apis",
   "main": "index.js",
-  "engine": {
+  "engines": {
     "node": "16.13.0",
     "npm": "1.0.0"
   },

@@ -7,11 +7,12 @@ const ProductsContext = createContext();
 const Context = ({ children }) => {
 
  const url = 'http://localhost:5000/gettingItemsdata';
+ //const url = 'https://balajiapplication.herokuapp.com/gettingItemsdata';
  useEffect(() => {
   fetchData();
  }, [])
  const fetchData = async () => {
-  const response = await axios.post(url)
+  const response = await axios.get(url)
   if (response.status === 200) {
    dispatch({
     type: "PRODUCTS_DATA",
