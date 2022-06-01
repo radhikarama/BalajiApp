@@ -6,8 +6,6 @@ import axios from 'axios';
 const ProductsContext = createContext();
 const Context = ({ children }) => {
 
-
-
  const url = 'http://localhost:5000/gettingItemsdata';
  useEffect(() => {
   fetchData();
