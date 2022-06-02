@@ -6,8 +6,8 @@ import axios from 'axios';
 const ProductsContext = createContext();
 const Context = ({ children }) => {
 
- const url = 'http://localhost:5000/gettingItemsdata';
- //const url = 'https://balajiapplication.herokuapp.com/gettingItemsdata';
+ //const url = 'http://localhost:5000/gettingItemsdata';
+ const url = 'https://sweetsapplication.herokuapp.com/gettingItemsdata';
  useEffect(() => {
   fetchData();
  }, [])
