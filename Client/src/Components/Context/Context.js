@@ -7,13 +7,15 @@ const ProductsContext = createContext();
 const Context = ({ children }) => {
 
  //const url = 'http://localhost:5000/gettingItemsdata';
- const url = 'https://sweetsapplication.herokuapp.com/gettingItemsdata';
+ const url = "https://sweetsapplication.herokuapp.com/gettingItemsdata";
  useEffect(() => {
   fetchData();
  }, [])
  const fetchData = async () => {
   const response = await axios.get(url)
+  console.log(response, 'herokudata')
   if (response.status === 200) {
+
    dispatch({
     type: "PRODUCTS_DATA",
     payload: response?.data?.data

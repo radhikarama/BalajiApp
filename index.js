@@ -12,9 +12,10 @@ app.use(bodyparser.json());
 app.use(express.json());
 app.use(cors());
 const PORT = process.env.PORT || global.config.PORT;
-if (process.env.PORT === 'production') {
- app.use(express.static('Client/build'))
-}
+
+//if (process.env.PORT === 'production') {
+app.use(express.static(path.join(__dirname + "/public")))
+//}
 const objCollection = {
  app: app
 }
