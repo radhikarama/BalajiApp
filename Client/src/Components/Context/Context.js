@@ -2,7 +2,6 @@ import React, { createContext, useContext, useEffect, useReducer, useState } fro
 import { reducer } from './Reducer';
 import axios from 'axios';
 
-
 const ProductsContext = createContext();
 const Context = ({ children }) => {
 

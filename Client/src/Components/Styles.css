@@ -29,8 +29,7 @@ left: 43%;
 .search{
   position: absolute;
     top: 34%;
-    left: 35%;
-    
+    left: 35%;   
 }
 .name{
   text-shadow: 3px 3px chartreuse;
@@ -238,7 +237,8 @@ left: 30%;
   display: none !important;
 }
      .search {
-       top: 98%;
+       display: none;
+       /* top: 98%; */
        /* left: 15%; */
      }
              .fbars {
