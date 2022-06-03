@@ -211,10 +211,15 @@ opacity: 0.9;
         .cartProducts {
           width: 65%;
         }
-            .search {
+            /* .search {
               top: 40%;
               left: 15%;
-            }
+            } */
+                        .search {
+                          display: none !important;
+                          /* top: 98%; */
+                          /* left: 15%; */
+                        }
                         .foodicon {
                           top: 50%;
                           left: 33%;
