@@ -237,7 +237,7 @@ left: 30%;
   display: none !important;
 }
      .search {
-       display: none;
+       display: none !important;
        /* top: 98%; */
        /* left: 15%; */
      }
