@@ -28,7 +28,7 @@ const Header = () => {
 
       <HeaderButtons />
 
-      <FormControl className='search' style={{ width: '500px' }} placeholder='Search for an Item'
+      <FormControl className='search' style={{ width: '500px' }} placeholder='Search for an Items'
         onChange={(e) => dispatch({
           type: "FILTER_BY_SEARCH",
           payload: e.target.value
