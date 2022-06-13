@@ -216,9 +216,9 @@ opacity: 0.9;
               left: 15%;
             } */
                         .search {
-                          display: none !important;
-                          /* top: 98%; */
-                          /* left: 15%; */
+/*                           display: none !important; */
+                          top: 90%;
+                          left: 15%;
                         }
                         .foodicon {
                           top: 50%;
